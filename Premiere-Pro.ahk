@@ -20,3 +20,15 @@ Return
 F2::
 Send ^k								; ctrl k [slice clip from playhead]
 Return
+
+; Ctrl+Shift+Mid Click to delete a selected clip
+^+MButton::
+Send {Delete}
+
+; MOUSE4 - Paste attributes to a clip
+XButton1::
+Send ^!v
+
+; MOUSE5 - Remove attributes to a clip
+XButton2::
+Send {NumpadDot}
