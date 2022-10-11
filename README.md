@@ -1,2 +1,4 @@
 # adobe-workflow
-Stuff that personally makes my video making workflow much more easier
+
+Some AutoHotkey scripts inspired by Taran to make the video editing
+process a whole lot easier
