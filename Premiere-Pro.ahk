@@ -13,22 +13,25 @@ SetWorkingDir, %A_ScriptDir%
 
 #IfWinActive ahk_exe Adobe Premiere Pro.exe
 F1::
-Send ^!s							; ctrl alt s [select clip from playhead]
-Send ^!+d							; ctrl alt shift d [ripple delete clip on timeline]
+  Send ^!s							; ctrl alt s [select clip from playhead]
+  Send ^!+d							; ctrl alt shift d [ripple delete clip on timeline]
 Return
 
 F2::
-Send ^k								; ctrl k [slice clip from playhead]
+  Send ^k								; ctrl k [slice clip from playhead]
 Return
 
 ; Ctrl+Shift+Mid Click to delete a selected clip
 ^+MButton::
-Send {Delete}
+  Send {Delete}
+Return
 
 ; MOUSE4 - Paste attributes to a clip
 XButton1::
-Send ^!v
+  Send ^!v
+Return
 
 ; MOUSE5 - Remove attributes to a clip
 XButton2::
-Send {NumpadDot}
+  Send {NumpadDot}
+Return
